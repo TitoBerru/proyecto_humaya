@@ -1,0 +1,117 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+.fondoDeHeader{
+    background-image: url("img/Central/imagenCentral.png");
+    background-position: auto;
+    background-size: cover;
+    width: 960px;
+    height: 400px;
+
+}
+
+.colorTituloLogo{
+    color:#FFFAF4 !important;
+}
+
+.fondoTransparente{
+    background-color: transparent;
+    border: none;
+}
+
+/* Clases de BODY*/
+
+body{
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+    font-size: 0.8rem;
+    
+}
+
+/* Clases de PRODUCTOS*/
+
+
+.colorTituloCard{
+    color:#D5AC8C;
+}
+
+.colorConBorde{
+    color:#D5AC8C;
+    border-color:#D5AC8C;
+}
+
+.colorSinBorde{
+    background-color: #D5AC8C;
+    border: none;
+}
+
+.colorTituloCardAlfajor{
+    color:#63421E !important;
+}
+
+.iconbanner{
+    display: flex;
+    justify-content: center;
+   
+}
+.iconbanner p{
+    text-align: center;
+    /* padding: 2rem */
+}
+.iconos{
+    width: 12vh;
+    padding:0
+    /* height: 20vh; */
+}
+
+.form{
+   color: #856C4F;
+   text-align: center;
+   font-size: 1rem;
+   padding: 1rem;
+}
+
+.border {
+    border: 5px solid #856C4F!important;
+}
+
+.card .card-link{
+  font-weight: bold;}
+.btn{
+    color: #856C4F
+}
+.form-control{
+    background-color:#856C4F;
+    border:none;
+    border-radius: 10px;
+}
+.recetas{
+    padding: 2rem;
+}
+.recetas img{
+    height: 60vh;
+}
+@media (min-width: 960px) {
+
+    .fondoDeHeader {
+        width: 100vw;
+        height: 78vh;  
+    }
+    .fondoCardProductos img{
+       width: 50vw;;
+    }  
+ 
+    .row{
+        border: 5px solid red;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 43vh;
+
+    }
+    .general{
+        display:grid;
+        grid-template-columns: 8fr 8fr;
+    }
+}
