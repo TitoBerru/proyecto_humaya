@@ -92,6 +92,7 @@ body{
 }
 .recetas img{
     height: 60vh;
+    max-height: 50vw;
 }
 @media (min-width: 960px) {
 
@@ -114,4 +115,18 @@ body{
         display:grid;
         grid-template-columns: 8fr 8fr;
     }
+}
+@media (max-width: 576px) {
+    .maizena{
+        max-width: 50vw;
+}
+ .productoDestacado p{
+    font-size: 0.8rem;
+    margin-right: 40vw;
+ }
+ .productoDestacado .btn{
+    /* border: 5px solid red; */
+   border:solid; 
+   
+ }
 }
