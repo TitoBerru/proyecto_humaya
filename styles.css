@@ -19,7 +19,11 @@
     background-color: transparent;
     border: none;
 }
-
+/* LogoClass */
+.logo2{
+    /* border: 5px solid red; */
+    display: none;
+}
 /* Clases de BODY*/
 
 body{
@@ -95,6 +99,68 @@ body{
     max-height: 50vw;
 }
 @media (min-width: 960px) {
+/* Genericos */
+p{
+    font-size: large;
+}
+/* HEADER */
+header{
+    position:absolute;
+    width: 100vw;
+    margin-top: 2rem;
+   
+
+    
+}
+.bg-dark {
+    background-color: transparent;
+}   
+ .container-fluid{
+    position: absolute;
+    background-color: transparent;
+   
+ }
+
+.collapse{
+    color: transparent;
+    background-color: transparent;
+    
+}
+
+/* Navbar */
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content:center;
+    font-size: large;
+    padding:1rem;
+    background-color: transparent;
+    
+}
+/* Texto Central */
+.fondoTransparente {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+
+    
+    /* margin: auto; */
+    /* margin-right: 8vh; */
+    color: antiquewhite;
+    /* width: 57vh; */
+    /* height: 39vh; */
+   
+}
+.conocenos{
+    border-radius:10px ;
+}
+    /* LogoClass */
+.logo2{
+    display:contents;
+}
+.logo1{
+    display: none;
+}
 
     .fondoDeHeader {
         width: 100vw;
@@ -104,8 +170,14 @@ body{
        width: 50vw;;
     }  
  
+    .fondoDeHeader{
+        display: flex;
+        justify-content:flex-end;
+        height: 90vh;
+        
+    }
     .row{
-        border: 5px solid red;
+        /* border: 5px solid red; */
         display: flex;
         flex-wrap: nowrap;
         height: 43vh;
@@ -130,3 +202,7 @@ body{
    
  }
 }
+@media (max-width: 991px) {
+  
+}
+
