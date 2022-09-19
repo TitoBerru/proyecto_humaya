@@ -12,17 +12,21 @@
 }
 
 .colorTituloLogo{
-    color:#FFFAF4 !important;
+    color:#FFFAF4;
 }
 
 .fondoTransparente{
     background-color: transparent;
     border: none;
+    margin-top: 5rem;
 }
 /* LogoClass */
 .logo2{
     /* border: 5px solid red; */
     display: none;
+}
+.Bigtitle{
+    margin-top: 5rem;
 }
 /* Clases de BODY*/
 
@@ -98,6 +102,10 @@ body{
     height: 60vh;
     max-height: 50vw;
 }
+
+/*************************************   MEDIAS  QUERYS  **************************************/
+
+
 @media (min-width: 992px) {
 /* Genericos */
 p{
@@ -131,61 +139,116 @@ header{
 .navbar-expand-lg .navbar-collapse {
     display: flex;
     flex-basis: auto;
-    justify-content:space-evenly;
-    font-size: large;
+    justify-content:center;
+    font-size:x-large;
     /* padding:25rem; */
     background-color: transparent;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    font-weight: 100;
+    color:aliceblue;
     
+}
+.nav-item{
+    margin: 0 1rem;
+}
+.card {
+    align-items: flex-end;
 }
 /* Texto Central */
 .fondoDeHeader h5{
-    font-size: 3rem;
+    font-size: 2.9rem;
+    font-weight: 200;
 }
-.fondoTransparente {
-    position: relative;
-    background-color: transparent;
-    border: none;
-    color: antiquewhite;
-    font-size: xx-large;
+
+.Bigtitle{
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    margin-right: 6rem;
+    margin-top: 12rem;
+}
+.Bigtitle p{
+color: #FFFAF4;
+font-weight: 300;
 }
 .conocenos{
-    border-radius:10px ;
+    border-radius:15px ;
+    width: 16vw;
+    font-weight: 500;
+    color: aliceblue;
+    padding: 1rem;
 }
     /* LogoClass */
 .logo2{
     display:contents;
+    height: 12vh;
+    width: 8vw;
+    margin: 0 1rem;
+   
 }
 .logo1{
     display: none;
 }
 
-    .fondoDeHeader {
-        width: 100vw;
-        height: 78vh;  
-    }
-    .fondoCardProductos img{
+.fondoCardProductos img{
        width: 50vw;;
     }  
  
-    .fondoDeHeader{
+.fondoDeHeader{
+    transform: scaleX();
+        width: 100vw;
         display: flex;
         justify-content:flex-end;
         height: 90vh;
         
     }
-    .row{
-        /* border: 5px solid red; */
-        display: flex;
-        flex-wrap: nowrap;
-        height: 43vh;
 
+.general{
+        display:flex;
+        
+        
     }
-    .general{
-        display:grid;
-        grid-template-columns: 8fr 8fr;
+.general img{
+        max-width: 49.4vw;
+        /* border: 5px solid red;
+         */
     }
+.producto2{
+   flex-direction: row-reverse;
+  
 }
+.texto{
+    /* border: 5px solid red; */
+    max-width: 50vw;
+
+}
+.producto4 img{
+    height: 50vh;
+    width: 100%;
+}
+.iconos {
+    width: 13vw;
+    height: 13vw;
+}
+.cardFormulario{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.cardFormulario img{
+    height: 100%;
+}
+.recetas{
+    display: flex;
+
+}
+.recetas p{
+    color:aliceblue;
+}
+
+}
+
+
 @media (max-width: 576px) {
     .maizena{
         max-width: 50vw;
@@ -199,8 +262,5 @@ header{
    border:solid; 
    
  }
-}
-@media (max-width: 991px) {
-  
 }
 
