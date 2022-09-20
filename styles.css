@@ -1,6 +1,7 @@
 *{
     box-sizing:border-box;
     margin: 0;
+    padding: 0;
 }
 
 .fondoDeHeader{
@@ -8,7 +9,7 @@
     background-position: auto;
     background-size: cover;
     width: 960px;
-    height: 400px;
+    height: 80vh;
 
 }
 
@@ -29,6 +30,8 @@
 }
 .Bigtitle{
     margin-top: 5rem;
+    margin-left: 1rem;
+    padding-top: 1.5rem;
 }
 /* Clases de BODY*/
 
@@ -101,29 +104,30 @@ body{
     border:none;
     border-radius: 10px;
 }
+/*********************** RECIPES **********************************/
 .recetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
-    width: 100vw;  
-
+    margin:auto;
 }
 .recetas img{
-    width: 90vw;
-    /* max-height: 0vh; */
+    
+    width: 70vw;
+    height: 35vh;
 }
 .textoRecetas{
     font-size: 1rem;
     background-color: #D0BDA0;
-    width: 90vw;
+    width: 70vw;
     max-height: 50vh;
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
-
-
 /*************************************   MEDIAS  QUERYS  **************************************/
-
 
 @media (min-width: 992px) {
 /* Genericos */
@@ -246,29 +250,41 @@ font-weight: 300;
 .cardFormulario img{
     height: 100%;
 }
+.col{
+   
+    max-width: 40vw;
+}
 /**************************************************Recipes **************************************************/
+
+
 .recetas{
-    width: 100vw;  
-    display: flex;
-    justify-content: space-evenly;
+   width: 100%;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: auto;
+    grid-column-gap: 1rem;
+    justify-items: center;
+    /* justify-content: space-around; */
  }
  .recetasUnicas{
      display: flex;
      flex-direction: column;
-     padding: 2rem;
+     /* padding: 2rem; */
      justify-items: center;
-     margin-left: -2rem;
-     margin-right: -2rem;
+     /* margin-left: -2rem;
+     margin-right: -2rem; */
  }
  .recetas img{
-     width: 30vw;
-     height: 40vh;
+   
+     width: 25vw;
+     height: 30vh;
  }
  .textoRecetas{
      font-size: 1rem;
      background-color: #D0BDA0;
      color:antiquewhite ;
-     width: 30vw;
+     width: 25vw;
      max-height: 50vh;
      text-align: center;
      padding: 1rem;
@@ -277,9 +293,46 @@ font-weight: 300;
  .btn {
      margin: auto;
      border: 1px solid black;
-     color: white; 
  }
 
+ /********************************** FOOTER *************************/
+.subFooter{
+    width: 100vw;
+    height: 40vh;
+    background-color: #000000;
+    display: flex;
+}
+.postFooter{
+    width: 100vw;
+    height: 4vh;
+    background-color: #856C4F;
+}
+.footerLogo{
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.footerMenu{
+    width: 10vw;
+    height: 100%;
+    text-align: center;
+}
+.footerNav{
+    width: 20vw;
+    height: 100%;
+    text-align: center;
+}
+.footerRedes{
+    width: 10vw;
+    height: 100%;
+    text-align: center;
+}
+.footerMap{
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+}
 }
 
 
