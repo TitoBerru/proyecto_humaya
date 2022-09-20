@@ -62,6 +62,7 @@ body{
 
 .colorTituloCardAlfajor{
     color:#63421E !important;
+    font-weight: 600;
 }
 
 .iconbanner{
@@ -102,11 +103,24 @@ body{
 }
 .recetas{
     padding: 2rem;
+    width: 100vw;  
+
 }
 .recetas img{
-    height: 60vh;
-    max-height: 50vw;
+    width: 90vw;
+    /* max-height: 0vh; */
 }
+.textoRecetas{
+    font-size: 1rem;
+    background-color: #D0BDA0;
+    width: 90vw;
+    max-height: 50vh;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
 
 /*************************************   MEDIAS  QUERYS  **************************************/
 
@@ -120,10 +134,7 @@ p{
 header{
     position:absolute;
     width: 100vw;
-    margin-top: 2rem;
-   
-
-    
+    margin-top: 2rem;   
 }
 .bg-dark {
     background-color: transparent;
@@ -214,17 +225,10 @@ font-weight: 300;
     }
 .general img{
         max-width: 49.4vw;
-        /* border: 5px solid red;
-         */
     }
 .producto2{
    flex-direction: row-reverse;
   
-}
-.texto{
-    /* border: 5px solid red; */
-    max-width: 50vw;
-
 }
 .producto4 img{
     height: 50vh;
@@ -242,15 +246,39 @@ font-weight: 300;
 .cardFormulario img{
     height: 100%;
 }
+/**************************************************Recipes **************************************************/
 .recetas{
+    width: 100vw;  
     display: flex;
-    padding: 3rem;
-
-
-}
-.recetas p{
-    color:aliceblue;
-}
+    justify-content: space-evenly;
+ }
+ .recetasUnicas{
+     display: flex;
+     flex-direction: column;
+     padding: 2rem;
+     justify-items: center;
+     margin-left: -2rem;
+     margin-right: -2rem;
+ }
+ .recetas img{
+     width: 30vw;
+     height: 40vh;
+ }
+ .textoRecetas{
+     font-size: 1rem;
+     background-color: #D0BDA0;
+     color:antiquewhite ;
+     width: 30vw;
+     max-height: 50vh;
+     text-align: center;
+     padding: 1rem;
+     
+ }
+ .btn {
+     margin: auto;
+     border: 1px solid black;
+     color: white; 
+ }
 
 }
 
@@ -270,3 +298,6 @@ font-weight: 300;
  }
 }
 
+ @media (min-width: 768px){
+    
+} 
