@@ -2,36 +2,41 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
+    
 }
 
 .fondoDeHeader{
     background-image: url("img/Central/imagenCentral.png");
-    background-position: auto;
+    background-position:unset;
     background-size: cover;
-    width: 960px;
+    width: 100vw;
     height: 80vh;
-
+    
 }
 
 
 .colorTituloLogo{
     color:#FFFAF4;
+    
 }
 
 .fondoTransparente{
     background-color: transparent;
     border: none;
     margin-top: 5rem;
+    
 }
 /* LogoClass */
 .logo2{
-    /* border: 5px solid red; */
+    
     display: none;
 }
 .Bigtitle{
     margin-top: 5rem;
     margin-left: 1rem;
     padding-top: 1.5rem;
+    
 }
 /* Clases de BODY*/
 
@@ -40,47 +45,54 @@ body{
     background: -webkit-linear-gradient(to right, #434343, #000000);  
     background: linear-gradient(to right, #434343, #000000); 
     font-size: 0.8rem;
-    
+    width: 100vw;
 }
+
 
 /* Clases de PRODUCTOS*/
 .products .card-body{
     background-color: #000000;
     height: 100%;
+    
  }
 
 .colorTituloCard{
     color:#D5AC8C;
+    
 }
 
 .colorConBorde{
     color:#D5AC8C;
     border-color:#D5AC8C;
+   
 }
 
 .colorSinBorde{
     background-color: #D5AC8C;
     border: none;
+    
 }
 
 .colorTituloCardAlfajor{
     color:#63421E !important;
     font-weight: 600;
+   
 }
 
 .iconbanner{
     display: flex;
     justify-content: center;
+    
    
 }
 .iconbanner p{
     text-align: center;
-    /* padding: 2rem */
+   
 }
 .iconos{
     width: 12vh;
-    padding:0
-    /* height: 20vh; */
+    padding:0;
+    
 }
 
 .form{
@@ -88,21 +100,28 @@ body{
    text-align: center;
    font-size: 1rem;
    padding: 1rem;
+    
 }
 
 .border {
-    border: 5px solid #856C4F!important;
+  
+    border: 5px solid #856C4F;
 }
 
 .card .card-link{
-  font-weight: bold;}
+  font-weight: bold;
+
+}
+
 .btn{
-    color: #856C4F
+    color: #856C4F;
+    
 }
 .form-control{
     background-color:#856C4F;
     border:none;
     border-radius: 10px;
+   
 }
 /*********************** RECIPES **********************************/
 .recetas{
@@ -111,6 +130,7 @@ body{
     align-items: center;
     padding: 2rem;
     margin:auto;
+   
 }
 .recetas img{
     
@@ -118,6 +138,7 @@ body{
     height: 35vh;
 }
 .textoRecetas{
+  
     font-size: 1rem;
     background-color: #D0BDA0;
     width: 70vw;
@@ -203,11 +224,18 @@ font-weight: 300;
     height: 15vh;
     width: 8vw;
     margin: 0 1rem;
-   
 }
 .logo1{
     display: none;
 }
+.logo3{
+    display:contents;
+    height: 22vh;
+    width: 14vw;
+    margin: 0 1rem;
+    margin-top:3rem;
+}
+
 
 .fondoCardProductos img{
        width: 50vw;;
@@ -236,8 +264,9 @@ font-weight: 300;
 }
 .producto4 img{
     height: 50vh;
-    width: 100%;
+    width: 100vw;
 }
+
 .iconos {
     width: 13vw;
     height: 13vw;
@@ -246,6 +275,7 @@ font-weight: 300;
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    
 }
 .cardFormulario img{
     height: 100%;
@@ -253,6 +283,9 @@ font-weight: 300;
 .col{
    
     max-width: 40vw;
+}
+.form{
+    width: 60vw;
 }
 /**************************************************Recipes **************************************************/
 
@@ -337,8 +370,13 @@ font-weight: 300;
 
 
 @media (max-width: 576px) {
-    .maizena{
-        max-width: 50vw;
+.producto4{
+        height: 33vh;
+    }
+.maizena{
+        max-width: 54vw;
+        margin: 0;
+        padding: 0;
 }
  .productoDestacado p{
     font-size: 0.8rem;
@@ -349,6 +387,10 @@ font-weight: 300;
    border:solid; 
    
  }
+ .img-fluid {
+    max-width: 100%;
+    height: 14rem;
+}
 }
 
  @media (min-width: 768px){
