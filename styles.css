@@ -5,7 +5,9 @@
     /* overflow: hidden; */
     
 }
-
+.fondoDeHeader p{
+    font-size: 1.2rem;
+}
 .fondoDeHeader{
     background-image: url("img/Central/imagenCentral.png");
     background-position:unset;
